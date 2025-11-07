@@ -1,0 +1,271 @@
+html {
+	box-sizing: border-box;
+	max-width: 1920px;
+	/*background-color: #F1F1F1;*/
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	width: auto;
+	margin: auto;
+	font-family: "DINPro", sans-serif;
+}
+
+.container {
+	width: auto;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*Fonts*/
+
+@font-face {
+	font-family: "DINPro";
+	src: local("DINPro-Light"), url("../font/DINPro-Light.woff2") format("woff2"),
+		url("../font/DINPro-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "DINPro";
+	src: local("DINPro-Medium"), url("../font/DINPro-Medium.woff2") format("woff2"),
+		url("../font/DINPro-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "DINPro";
+	src: local("DINPro-Bold"), url("../font/DINPro-Bold.woff2") format("woff2"),
+		url("../font/DINPro-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "DINPro";
+	src: local("DINPro-Black"), url("../font/DINPro-Black.woff2") format("woff2"),
+		url("../font/DINPro-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*resert*/
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.btn-reset {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+}
+
+.section-title {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.main-h1 {
+	margin: 0;
+	visibility: hidden;
+}
+
+.section-title {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+/*header*/
+
+.header {
+	display: none;
+}
+
+/*service*/
+
+.service {
+	background-color: #F5F5F7;
+}
+
+.service-container {
+	padding: 75px 0 150px;
+	display: flex;
+	flex-direction: column;
+	max-width: 1920px;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-service_h2 {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 440px;
+	font-weight: 700;
+	font-size: 60px;
+}
+
+.section-service_text {
+	font-weight: 500;
+	font-size: 31px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 961px;
+}
+
+.service-list {
+	padding: 0 140px;
+	margin-bottom: 22px;
+	flex-wrap: wrap;
+	gap: 25px;
+	justify-content: flex-start;
+}
+
+.service-list-item {
+	display: flex;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 40px;
+	padding: 30px 8px;
+	width: 240px;
+	height: 200px;
+	border-radius: 16px;
+	font-weight: 500;
+	font-size: 23px;
+	text-align: center;
+	flex-direction: column;
+	justify-content: flex-end;
+	border: white 3px solid;
+}
+
+.service-list-item-descr {
+	margin: 0;
+}
+
+.service-list-item1 {
+	background-image: url(../img/Section-Service-img-1.png);
+	padding-bottom: 20px;
+}
+
+.service-list-item2 {
+	background-image: url(../img/Section-Service-img-2.png);
+}
+
+.service-list-item3 {
+	background-image: url(../img/Section-Service-img-3.png);
+}
+
+.service-list-item4 {
+	background-image: url(../img/Section-Service-img-4.png);
+	background-position-y: 55px;
+}
+
+.service-list-item5 {
+	background-image: url(../img/Section-Service-img-5.png);
+	padding-bottom: 20px;
+}
+
+.service-list-item6 {
+	background-image: url(../img/Section-Service-img-6.png);
+}
+
+.service-list-item7 {
+	background-image: url(../img/Section-Service-img-7.png);
+	padding-bottom: 20px;
+}
+
+.service-list-item8 {
+	background-image: url(../img/Section-Service-img-8.png);
+}
+
+.service-list-item9 {
+	background-image: url(../img/Section-Service-img-9.png);
+}
+
+.service-list-item10 {
+	background-image: url(../img/Section-Service-img-10.png);
+}
+
+.service-list-item11 {
+	background-image: url(../img/Section-Service-img-11.png);
+}
+
+.service-list-item12 {
+	background-image: url(../img/Section-Service-img-12.png);
+	padding-bottom: 20px;
+}
+
+.service-list-item13 {
+	background-image: url(../img/Section-Service-img-13.png);
+}
+/*
+.service-list-item:hover {
+	border: #FE5000 3px solid; 
+}
+
+.service-list-item:active {
+	border: #822900 3px solid;
+}
+
+Не знаю нужна ли кликабельность для карточек услуг, 
+будут ли они работать с кнопкой "Узнать цену" для перехода 
+к конкретной услуге или они работаю просто как список,
+поэтому эффекты пока отключил
+
+*/
+
+.service-link {
+	display: inline-block;
+	min-width: 375px;
+	min-height: 117px;
+	padding-top: 45px;
+	background-color: #FE5000;
+	color: white;
+	text-decoration: none;
+	border-radius: 28px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+	cursor: pointer;
+	box-shadow: 
+    0 6px 0 #822900, /* Нижняя тень-граница */
+    0 6px 8px rgba(0, 0, 0, 0.2); /* Размытая тень */
+}
+
+.service-link:active {
+	background-color: #822900;
+}
